@@ -1,0 +1,26 @@
+1. conda create -p ./env python=3.7 -y
+2. conda activate ./env/
+3. pip install -r requirements.txt
+4. conda install pytorch==1.4.0 torchvision==0.5.0 cpuonly -c pytorch -y
+
+For CPU users -:
+5. python detectorTracker.py
+
+For GPU users -:
+# CUDA 9.2
+conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=9.2 -c pytorch
+
+# CUDA 10.1
+conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
+
+5. In \deep_sort_yolo\detector\YOLOv3\detector.py , change in line 12 use_cuda=True
+6. python detectorTracker.py
+
+
+Your web cam will start!!
+https://github.com/meituan/YOLOv6/blob/main/docs/Train_custom_data.md
+https://github.com/meituan/YOLOv6
+https://github.com/Rishav-hub?tab=repositories
+https://github.com/meituan/YOLOv6/blob/main/docs/Train_custom_data.md
+https://public.roboflow.com/object-detection/chess-full/24
+https://github.com/meituan/YOLOv6
